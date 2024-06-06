@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+    font-family: 'Nunito', sans-serif;
+}
+
+.Recyclift-header {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 4px #696363;
+}
+
+.Recyclift-header img {
+    width: 120px;
+    height: auto;
+}
