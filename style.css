@@ -112,7 +112,7 @@ nav ul {
     color: var(--whitecolor);
 }
 
-.about_us h2 hr{
+.about_us h2 hr {
     border: 3px solid var(--blackcolor);
     width: 80%;
     margin: 0 auto;
@@ -135,7 +135,7 @@ nav ul {
 
 }
 
-.box2{
+.box2 {
     background-color: var(--greycolor);
     height: 600px;
     position: relative;
@@ -147,14 +147,15 @@ nav ul {
     align-items: center;
 }
 
-.abt{
+.abt {
     align-items: center;
     padding: 50px;
     margin-top: 20px;
-    
+
 }
 
-.abt h2, .abt h3 {
+.abt h2,
+.abt h3 {
     font-size: 50px;
     line-height: 50px;
     /* width: 100%;
@@ -163,25 +164,25 @@ nav ul {
     text-align: center;
 }
 
-.abt h2 hr{
+.abt h2 hr {
     border: 3px solid var(--whitecolor);
     width: 30%;
     margin: 0 auto;
     border-radius: 50%;
 }
 
-.abt h3 hr{
+.abt h3 hr {
     width: 10%;
 }
 
-.abt p{
+.abt p {
     text-align: center;
     font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
 
 }
 
-.box3{
+.box3 {
     background-color: var(--darkgreencolor);
     height: auto;
     position: relative;
@@ -194,14 +195,15 @@ nav ul {
     padding: 20px;
 }
 
-.services{
+.services {
     align-items: center;
     padding: 50px;
     margin-top: 20px;
-    
+
 }
 
-.services h2, .services-img h3 {
+.services h2,
+.services-img h3 {
     font-size: 50px;
     line-height: 50px;
     /* width: 100%;
@@ -210,21 +212,21 @@ nav ul {
     text-align: center;
 }
 
-.services h2 hr{
+.services h2 hr {
     border: 3px solid var(--blackcolor);
     width: 20%;
     margin: 0 auto;
     border-radius: 50%;
 }
 
-.services-img h3 hr{
+.services-img h3 hr {
     border: 3px solid var(--blackcolor);
     width: 25%;
     margin: 0 auto;
     border-radius: 50%;
 }
 
-.services p{
+.services p {
     text-align: center;
     font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
@@ -232,10 +234,11 @@ nav ul {
 
 }
 
-.services-img img, abt-img img{
+.services-img img,
+.abt-img img {
     width: 300px;
     height: 250px;
-    
+
 }
 
 /* .test{
