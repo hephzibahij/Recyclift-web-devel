@@ -238,14 +238,11 @@ nav ul {
 .abt-img img {
     width: 300px;
     height: 250px;
-
-<<<<<<< HEAD
 }
 
 
 .box4 {
     display: flex;
-    background-color: var(--greycolor);
     background-position: 0 0 10px 10px;
     justify-content: space-around;
     align-items: center;
@@ -419,7 +416,3 @@ nav ul {
     margin-top: 20px;
     flex: 100; /* Ensures each service item takes up equal space */
 /* min-width: 300px; /* Adjust based on your design */
-*/
-=======
-}
->>>>>>> 7d51c6caf63803948d1ca7212ccc244427854664

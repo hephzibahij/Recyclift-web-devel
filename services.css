@@ -240,3 +240,61 @@ nav ul {
     height: 250px;
 
 }
+
+
+
+.box4 {
+    display: flex;
+    background-color: var(--greycolor);
+    background-position: 0 0 10px 10px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0;
+    padding: 100px;
+    font-size: 50px;
+    height: auto;
+    top: -59px;
+    padding: 20px;
+    box-shadow: border-box;
+    border-radius: 10px;
+    text-align: center;
+    overflow: clip;
+
+
+
+}
+.Team-container {
+    display: block;
+    
+}
+.Team1 {
+    align-items: center;
+    padding: 50px;
+    margin-top: 20px;
+}
+
+.Team1 img {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    
+}
+
+.team h4 hr {
+    border: green;
+
+}
+.Team1 b {
+    font-size: 18px;
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.Team1 h3 {
+    font-size: 14px;
+    color: var(--whitecolor);
+    margin-top: 5px;
+}
