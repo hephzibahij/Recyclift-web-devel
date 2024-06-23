@@ -242,59 +242,101 @@ nav ul {
 }
 
 
-
 .box4 {
-    display: flex;
-    background-color: var(--greycolor);
-    background-position: 0 0 10px 10px;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 0;
-    padding: 100px;
-    font-size: 50px;
-    height: auto;
-    top: -59px;
     padding: 20px;
-    box-shadow: border-box;
-    border-radius: 10px;
     text-align: center;
-    overflow: clip;
-
-
+    border: 3px solid var(--blackcolor);
+    background-color: var(--blackcolor);
+    top: -59px;
+    height: auto;
+    position: relative;
 
 }
+
 .Team-container {
-    display: block;
-    
-}
-.Team1 {
-    align-items: center;
-    padding: 50px;
-    margin-top: 20px;
-}
-
-.Team1 img {
-    display: block;
+    max-width: 1200px;
     margin: 0 auto;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    
+    display: flex;
+}
+.Team-container h1 {
+    margin-bottom: 20px;
+}
+.Team-group {
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+    vertical-align: top;
+}
+.Team-image img {
+    width: 100%;
+    height: auto;
+}
+.Team-group h5,
+.Team-group h6 {
+    margin: 10px 0 0;
 }
 
-.team h4 hr {
-    border: green;
 
+/* Style for the Join Us section */
+.box5 {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    text-align: center;
+    border: 3px solid var(--blackcolor);
+    background-color: var(--greycolor);
+    top: -59px;
+    height: auto;
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
-.Team1 b {
-    font-size: 18px;
+
+/* Style for the Join Us form */
+.Joinus {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Style for the form heading */
+.Joinus h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Style for form labels */
+.Joinus label {
     display: block;
-    margin-top: 10px;
     font-weight: bold;
+    margin-bottom: 5px;
+
 }
-.Team1 h3 {
-    font-size: 14px;
-    color: var(--whitecolor);
-    margin-top: 5px;
+
+/* Style for form inputs and textareas */
+.Joinus input[type="text"],
+.Joinus input[type="email"],
+.Joinus select,
+.Joinus textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+    border-radius: 3px;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+/* Style for form submit button */
+.Joinus input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Style for form submit button on hover */
+.Joinus input[type="submit"]:hover {
+    background-color: #45a049;
 }
