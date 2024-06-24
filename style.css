@@ -280,8 +280,8 @@ nav ul {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     text-align: center;
-    border: 3px solid var(--blackcolor);
-    background-color: var(--greycolor);
+    border: 3px solid var(--color);
+    background-color: var(--lightgreencolor);
     top: -59px;
     height: auto;
     position: relative;
@@ -336,6 +336,44 @@ nav ul {
 /* Style for form submit button on hover */
 .Joinus input[type="submit"]:hover {
     background-color: #45a049;
+}
+
+.home6 {
+    background-color: #f8f9fa;
+    padding: 20px;
+    top: 100%;
+    padding: 20px;
+    background-color: #061605;
+
+}
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footerimg img {
+    max-width: 10%;
+    height: auto;
+}
+.footerlist ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.footerlist ul li {
+    display: inline;
+}
+
+.footerlist ul li a {
+    color: #000;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
 }
 
 /* .test{
