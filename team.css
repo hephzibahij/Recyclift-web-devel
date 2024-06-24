@@ -243,8 +243,11 @@ nav ul {
 
 
 .box4 {
-    padding: 20px;
+    padding: 50px;
     text-align: center;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--whitecolor);
     border: 3px solid var(--blackcolor);
     background-color: var(--blackcolor);
     top: -59px;
@@ -257,6 +260,7 @@ nav ul {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
+    justify-content: space-around;
 }
 .Team-container h1 {
     margin-bottom: 20px;
