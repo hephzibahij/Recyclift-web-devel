@@ -155,7 +155,9 @@ nav ul {
 }
 
 .abt h2,
-.abt h3 {
+.abt h3,
+.box4 h1,
+.box5 h3 {
     font-size: 50px;
     line-height: 50px;
     /* width: 100%;
@@ -163,6 +165,15 @@ nav ul {
     color: var(--blackcolor);
     text-align: center;
 }
+
+.box4 h1 hr{
+    border: 3px solid var(--blackcolor);
+    width: 5%;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+
 
 .abt h2 hr {
     border: 3px solid var(--whitecolor);
@@ -245,12 +256,14 @@ nav ul {
     text-align: center;
     font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--whitecolor);
-    border: 3px solid var(--blackcolor);
-    background-color: var(--blackcolor);
+    color: var(--blackcolor);
+    border: 0px;
+    background-color: var(--greycolor);
     top: -59px;
     height: auto;
     position: relative;
+    padding-top: 70px;
+    
 
 }
 
@@ -270,8 +283,8 @@ nav ul {
     vertical-align: top;
 }
 .Team-image img {
-    width: 100%;
-    height: auto;
+    width: 300px;
+    height: 300px;
     display: block;
 }
 .Team-group h5,
@@ -281,7 +294,7 @@ nav ul {
 
 /* Style for the Join Us section */
 .box5 {
-    padding: 20px;
+    padding-top: 70px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     text-align: center;
@@ -290,8 +303,13 @@ nav ul {
     top: -59px;
     height: auto;
     position: relative;
-    border-radius: 5px;
-    margin-bottom: 20px;
+}
+
+.box5 h3 hr{
+    border: 3px solid var(--whitecolor);
+    width: 8%;
+    margin: 0 auto;
+    border-radius: 50%;
 }
 
 /* Style for the Join Us form */
@@ -301,9 +319,10 @@ nav ul {
 }
 
 /* Style for the form heading */
-.Joinus h3 {
-    font-size: 24px;
+.box5 h3 {
+    font-size: 50px;
     margin-bottom: 20px;
+    color: var(--whitecolor);
 }
 
 /* Style for form labels */
@@ -352,12 +371,19 @@ nav ul {
     background-color: #061605;
 
 }
+
 .footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    padding: 0;
+    position: relative;
+    height: auto;
+    color: var(--whitecolor);
+    background-color: var(--blackcolor);
+    
 }
 
 .footerimg img {
@@ -375,129 +401,15 @@ nav ul {
 }
 
 .footerlist ul li a {
-    color: #000;
+    color: var(--whitecolor);
     font-size: 16px;
     text-transform: uppercase;
     padding: 5px 10px;
     transition: color 0.3s ease;
+    list-style-type: none;
+    text-decoration: none;
 }
 
-/* .test{
-    position: relative;
-    top: 90px;
-    margin: 50px;
-    height: auto;
-    width: auto;
-    padding: 20px;
-    background-color: pink;
+.copy{
+    color: var(--whitecolor);
 }
-
-.test h1{
-    text-align: center;
-}
-
-.test hr{
-    width: 80%;
-    border: 2px solid black;
-    border-radius: 50px;
-}
-
-.testrun{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
-    padding: 20px;
-    gap: 30px;
-}
-
-.section2{
-    background-color: #808080;
-    text-align: center;
-    margin-top: 50px;
-    padding-top: 50px;
-    line-height: 30px;
-    position: relative;
-}
-
-.section1 h1{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    height: 100px;
-
-}
-
-.team {
-    position: relative;
-    top: 90px;
-    margin: 50px;
-    height: auto;
-}
-
-.team-member {
-    display: flex;
-    position: relative;
-    justify-content: center
-} */
-
-/* .first-image{
-    text-align: center;
-}
-
-.first-image img{
-    margin-top: 10px;
-    width: 500px;
-    height: auto;
-}
-
-.second-section{
-    padding: 0 100px;
-    margin-top: 15px;
-}
-
-.second-images{
-    color: blue;
-    display: grid;
-    align-items: center;
-    background-color: none;
-    place-items: center;
-    max-width: 100%;
-    height: auto;
-    
-}
-
-.services-container {
-    margin-bottom: 3rem;
-    margin-top: 3rem;
-} */
-
-/* .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    g
-    justify-content: center;
-    align-items: center;
-} */
-
-/* #service{
-    display: flex;
-    justify-content: space-between; /* Adjusts spacing between items */
-/* flex-wrap: wrap; /* Allows items to wrap on smaller screens */
-*/
-/* .service-file {
-    text-align: right;
-    align-items: center;
-   
-    padding-top: 20px;
-} */
-
-/* .service-setting image{
-    display: grid;
-    align-items: center;
-    margin-top: 20px;
-    flex: 100; /* Ensures each service item takes up equal space */
-/* min-width: 300px; /* Adjust based on your design */

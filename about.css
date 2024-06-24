@@ -344,3 +344,46 @@ nav ul {
 .Joinus input[type="submit"]:hover {
     background-color: #45a049;
 }
+
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0;
+    position: relative;
+    height: auto;
+    color: var(--whitecolor);
+    background-color: var(--blackcolor);
+    
+}
+
+.footerimg img {
+    max-width: 10%;
+    height: auto;
+}
+.footerlist ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.footerlist ul li {
+    display: inline;
+}
+
+.footerlist ul li a {
+    color: var(--whitecolor);
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.copy{
+    color: var(--whitecolor);
+}
