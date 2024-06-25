@@ -19,7 +19,16 @@
 
         <nav class="nav-menu">
             <ul class="nav-list">
-                <li><a href="index.html" class="active">Home</a>
+                <li>
+                    <a href="#Home" aria-label="Home">Home</a>
+                </li>
+                <li>
+                    <a href="#about" aria-label="About">About</a>
+                </li>
+                <li>
+                    <a href="#teams" aria-label="Team">Team</a>
+                    <a href="#service" aria-label="Service">Service</a>
+                    <a href="index.html" class="active">Home</a>
                 </li>
                 <li>
                     <a href="about.html">About</a>
@@ -28,13 +37,13 @@
                     <a href="services.html">Service</a>
                 </li>
                 <li>
-                    <a href="team.html" class="active">Team</a>
+                    <a href="#team.html" class="active">Team</a>
                 </li>
                 <li>
                     <i class="fas fa-search" aria-label="Search"></i>
                 </li>
                 <li class="Joinus">
-                    <a href="joinus.html" aria-label="Join Us">Join US</a>
+                    <a href="#joinus" aria-label="Join Us">Join US</a>
                 </li>
             </ul>
         </nav>
@@ -116,116 +125,78 @@
         </section>
 
 
-
-        <section class="box4">
-            <h1>Team
-                <hr>
-            </h1>
-            <br>
-            <div class="Team-container">
-                <div class="vol aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="Team-group">
-                        <div class="Team-image"><img src="image/IMG_2283.jpg" alt=""></div>
-                        <h5>Ameuzutam ijeje</h5>
-                        <h6>CEO/Lawyer</h6>
-                    </div>
-                </div>
-                <div class="vol aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="Team-group">
-                        <div class="Team-image"><img src="image/IMG_2287.jpg" alt=""></div>
-                        <h5>Janim Ijeje </h5>
-                        <h6>CEO</h6>
-                    </div>
-                </div>
-                <div class="vol aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="Team-group">
-                        <div class="Team-image"><img src="image/IMG_2333.jpg" alt=""></div>
-                        <h5>Kaniyeh Ijeje </h5>
-                        <h6>CMO</h6>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="box5">
-            <h3>Join Us
-                <hr>
-            </h3>
-            <br>
-            <div class="Joinus">
-                <div id="join-us-button-container"></div>
-                <form id="join-us-form" style="display: name">
-                    <br>
-                    <!-- Your form fields here -->
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required><br><br>
-                    <br> <br>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required><br><br>
-                    <br>
-                    <label for="gender">Gender:</label><br>
-                    <select id="gender" name="gender">
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="other">Other</option>
-                    </select><br>
-                    <br>
-
-                    <label for="organization">Education</label><br>
-                    <textarea id="organization" name="organization" rows="4" cols="50" required></textarea><br><br>
-                    <br> <br>
-                    <br>
-                    <label for="dob">Date of Birth:</label><br>
-                    <input type="date" id="dob" name="dob" required><br>
-                    <br>
-                    <label for="reason">Why do you want to be part of the Team</label><br>
-                    <textarea id="reason" name="reason" rows="4" cols="50" required></textarea><br>
-                    <br>
-
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-        </section>
     </main>
-
-    <div class="home6">
-        <div class="container">
-            <div class="footer">
-                <div class="footerimg ">
-                    <img src="image/recyclift-removebg-preview.png" img-fluid" alt="footer-img">
-                </div>
-                <div class="footerlist">
-                    <ul>
-                        <li><a href="#Home" class="text-uppercase">Home</a></li>
-                        <li><a href="#About" class="text-uppercase">About-us</a></li>
-                        <li><a href="#Services" class="text-uppercase">Services</a></li>
-                        <li class="fs-5"><a href="/" class="text-uppercase">FAQs</a></li>
-                        <li class="fs-5"><a href="/" class="text-uppercase">Support</a></li>
-                    </ul>
-                </div>
-            </div>
+    <section class="box4">
+        <h1>Team
             <hr>
-            <div class="end">
-                <div class="social"><a href="https://facebook.com/groups/347902206767013/?ref=share"
-                        target="_blanc"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
-                            stroke-linecap="round" stroke-linejoin="round" class="icons" height="1em" width="1em"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                        </svg></a>
-                    <a href="https://linkedin.com/groups/14097541" target="_blanc"><svg stroke="currentColor"
-                            fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
-                            </path>
-                        </svg></a>
-                    <p class="copy">Copyright @ 2024. All rights Reserved. Recyclift.</p>
-                </div>
-            </div>
+        </h1>
+        <br>
+        <div class="Team-container">
+            <div class="vol aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000"><div class="Team-group"><div class="Team-image"><img src="image/IMG_2283.jpg" alt=""></div><h5>Ameuzutam ijeje</h5><h6>CEO/Lawyer</h6></div></div>
+            <div class="vol aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000"><div class="Team-group"><div class="Team-image"><img src="image/IMG_2287.jpg" alt=""></div><h5>Janim Ijeje </h5><h6>CEO</h6></div></div>
+            <div class="vol aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000"><div class="Team-group"><div class="Team-image"><img src="image/IMG_2333.jpg" alt=""></div><h5>Kaniyeh Ijeje </h5><h6>CMO</h6></div></div>
         </div>
+    </section>
 
+    <section class="box5">
+        <h3>Join Us</br>
+        <div class="Joinus">
+            <div  id="join-us-button-container"></div>
+            <form id="join-us-form" style="display: name"></br>
+                <br>
+                            <!-- Your form fields here -->
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required><br><br>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required><br><br>
+			    <label for="gender">Gender:</label><br>
+                            <select id="gender" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                            </select><br>
+                            <label for="education">Level of Education:</label>
+    <select id="education" name="education" required>
+      <option value="highschool">Secondary School</option>
+      <option value="bachelor">Bachelor's Degree</option>
+      <option value="master">Master's Degree</option>
+      <option value="phd">PhD</option>
+      <option value="other">Other</option>
+    </select></form></br>
+                          <label for="phone-code">Country Code:</label>
+  <select id="phone-code" name="phone-code" required>
+    <option value="+1">+1 (USA)</option>
+    <option value="+44">+44 (UK)</option>
+    <option value="+234">+234 (Nigeria)</option>
+    <option value="+91">+91 (India)</option>
+    <!-- Add more country codes as needed -->
+  </select><br><br>
+                          <label for="phone">Phone Number:</label>
+                          <input type="tel" id="phone" name="phone" row="4" cols="50" required><br><br>
+            <br>
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required><br><br>
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" rows="2" cols="50" required></textarea><br><br>
+	    <label for="reason">Why do you want to be part of the Team</label><br>
+<textarea id="reason" name="reason" rows="4" cols="50" required></textarea><br>
+<br>
 
-        <!-- <section id="Home">
+    <input type="submit" value="Submit">
+</form>
+        </div>
+    </section>
+
+    <div class="home6"><div class="container"><div class="footer">
+        <div class="footerimg ">
+            <img src="image/recyclift-removebg-preview.png"img-fluid" alt="footer-img"></div>
+            <div class="footerlist"><ul><li><a href="#Home" class="text-uppercase">Home</a></li>
+                <li><a href="#About" class="text-uppercase">Aboutus</a></li><li><a href="#Services" class="text-uppercase">Services</a></li>
+                <li class="fs-5"><a href="/" class="text-uppercase">FAQs</a></li><li class="fs-5"><a href="/" class="text-uppercase">Support</a></li></ul></div></div><hr>
+                <div class="end"><div class="social"><a href="https://facebook.com/groups/347902206767013/?ref=share" target="_blanc"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="icons" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                    <a href="https://linkedin.com/groups/14097541" target="_blanc"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg></a>
+                    <p class="copy">Copyright @ 2024. All rights Reserved. Recyclift.</p></div></div></div>
+    <!-- <section id="Home">
     <div class="test">
         <h1>WE ARE RECYCLIFT</h1>
         <hr>
@@ -286,5 +257,4 @@
         </section> -->
 
 </body>
-
 </html>

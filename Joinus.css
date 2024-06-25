@@ -251,6 +251,28 @@ nav ul {
     top: -59px;
     height: auto;
     position: relative;
+    padding-top: 90px;
+
+}
+
+.Team {
+    align-items: center;
+    padding: 50px;
+    margin-top: 20px;
+
+}
+.Team h1 br{
+    border: 3px solid var(--blackcolor);
+    width: 20%;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.Team h1 hr{
+    text-align: center;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--whitecolor);
 
 }
 
@@ -316,6 +338,8 @@ nav ul {
 /* Style for form inputs and textareas */
 .Joinus input[type="text"],
 .Joinus input[type="email"],
+.Joinus input[type="tel"],
+.Joinus input[type="date"],
 .Joinus select,
 .Joinus textarea {
     width: 100%;
