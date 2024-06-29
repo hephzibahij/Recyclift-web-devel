@@ -348,26 +348,41 @@ nav ul {
     background-color: #45a049;
 }
 
+.home6 {
+    background: black;
+    padding: 2rem 0;
+    margin-top: 10px;
 
-.footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+}
+
+.footer, .footerlist ul {
     align-items: center;
-    margin-bottom: 20px;
-    padding: 0;
-    position: relative;
-    height: auto;
-    color: var(--whitecolor);
-    background-color: var(--blackcolor);
+    display: flex;
     
 }
 
 .footerimg img {
-    max-width: 10%;
+    max-width: 9%;
     height: auto;
 }
-.footerlist ul {
+.footer {
+    gap: 5rem;
+    row-gap: 4rem;
+    column-gap: 4rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: wrap;
+    align-items: center;
+
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+footer ul {
     display: flex;
     justify-content: flex-end;
     gap: 15px;
@@ -378,15 +393,22 @@ nav ul {
 }
 
 .footerlist ul li a {
-    color: var(--whitecolor);
+    color: white;
     font-size: 16px;
     text-transform: uppercase;
-    padding: 5px 10px;
-    transition: color 0.3s ease;
-    list-style-type: none;
-    text-decoration: none;
+    padding: 20px 10px;
+    transition: color 0.1s ease;
 }
 
-.copy{
-    color: var(--whitecolor);
+.social a {
+    color: var(--color-primary);
+    align-items: center;
+}
+.home6 .end {
+    color: #fff;
+}
+
+hr {
+    margin: 0rem 0;
+    width: 100%;
 }
