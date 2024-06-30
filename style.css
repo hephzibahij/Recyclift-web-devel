@@ -381,11 +381,11 @@ nav ul {
 
 /* Style for form submit button on hover */
 .Joinus input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: green;
 }
 
 .home6 {
-    background: black;
+    background: #45351b;
     padding: 2rem 0;
     margin-top: -79px;
 
