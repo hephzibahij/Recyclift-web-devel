@@ -243,18 +243,55 @@ nav ul {
 
 
 .box4 {
-    padding: 50px;
+    padding: 50px; /* Adjusted shorthand padding */
     text-align: center;
     font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--whitecolor);
     border: 3px solid var(--blackcolor);
     background-color: var(--blackcolor);
-    top: -59px;
-    height: auto;
     position: relative;
-    padding-top: 90px;
+    top: -59px;
+    padding-top: 80px;
+}
 
+.box4 h1 hr{
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    border-radius: 50%;
+
+}
+
+.Team {
+    align-items: center;
+    padding: 50px;
+    margin-top: 20px;
+}
+
+.Team h1 br {
+    border: 3px solid var(--blackcolor);
+    width: 20%;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.Team h1 hr {
+    text-align: center;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--whitecolor);
+}
+
+.Team h1,
+.Team h3 {
+    font-size: 50px;
+    line-height: 50px;
+    color: var(--whitecolor);
+    text-align: center;
 }
 
 .Team-container {
@@ -263,24 +300,29 @@ nav ul {
     display: flex;
     justify-content: space-around;
 }
+
 .Team-container h1 {
     margin-bottom: 20px;
 }
+
 .Team-group {
     display: inline-block;
-    width: 200px;
+    width: 150px; /* Reduced width */
     margin: 10px;
     vertical-align: top;
+    border-bottom: 2px solid var(--blackcolor); /* Added bottom border */
 }
+
 .Team-image img {
     width: 100%;
     height: auto;
+    display: block;
 }
+
 .Team-group h5,
 .Team-group h6 {
     margin: 10px 0 0;
 }
-
 
 /* Style for the Join Us section */
 .box5 {
