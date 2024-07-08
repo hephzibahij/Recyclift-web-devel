@@ -188,7 +188,7 @@ nav ul {
     position: relative;
     margin-top: 0;
     justify-content: center;
-    top: -59px;
+    top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -238,7 +238,9 @@ nav ul {
 .abt-img img {
     width: 300px;
     height: 250px;
+
 }
+
 
 .box4 {
     padding: 50px; /* Adjusted shorthand padding */
@@ -296,7 +298,7 @@ nav ul {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .Team-container h1 {
@@ -315,7 +317,6 @@ nav ul {
     width: 100%;
     height: auto;
     display: block;
-    display: fixed;
 }
 
 .Team-group h5,
@@ -323,94 +324,20 @@ nav ul {
     margin: 10px 0 0;
 }
 
-#contact {
-    padding: 50px 0;
-    background-color: linear-gradient(to bottom, #4CAF50 0%, #f9f9f9 100%);;
-    text-align: center;
-    color: #049804;
-    background-color: greenyellow;
-    position: relative;
-    top: -59px;
-    padding-top: 80px;
-}
-
-.contact-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-.contact-container h1 {
-    color: var(--color-green);
-    font-size: 2.5rem;
-    text-align: center;
-}
-
-.contact-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.contact-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contact-text .item {
-    margin: 20px 0;
-    text-align: center;
-}
-
-.contact-text .item i {
-    font-size: 40px;
-    color: #4CAF50;
-    margin-bottom: 10px;
-}
-
-.contact-text .item h2 {
-    font-size: 24px;
-    margin-bottom: 5px;
-    color: #333;
-}
-
-.contact-text .item h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #666;
-}
-
-.contact-text .item p {
-    font-size: 16px;
-    color: #777;
-}
-
-@media (max-width: 768px) {
-    .contact-body {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contact-image {
-        margin-bottom: 20px;
-    }
-}
-
+/* Style for the Join Us section */
 .box5 {
     padding: 20px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     text-align: center;
-    border: 3px solid var(--color);
+    border: 3px solid var(--blackcolor);
     background-color: var(--greycolor);
     top: -59px;
     height: auto;
     position: relative;
-    border-radius: 0px;
+    border-radius: 5px;
     margin-bottom: 20px;
-    justify-content: center;
 }
-
 
 /* Style for the Join Us form */
 .Joinus {
@@ -429,21 +356,18 @@ nav ul {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-    display: flex;
 
 }
-
 
 /* Style for form inputs and textareas */
 .Joinus input[type="text"],
 .Joinus input[type="email"],
-.Joinus input[type="education"],
 .Joinus input[type="tel"],
 .Joinus input[type="date"],
 .Joinus select,
 .Joinus textarea {
     width: 100%;
-    padding: 10px;
+    padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     display: flex;
@@ -451,55 +375,25 @@ nav ul {
     box-sizing: border-box; /* Ensure padding and border are included in width */
 }
 
-.Joinus textarea {
-    resize: vertical;
-  }
-
 /* Style for form submit button */
 .Joinus input[type="submit"] {
-    width: 100%;
     background-color: #4CAF50;
     color: white;
     padding: 10px 15px;
     border: none;
     border-radius: 3px;
     cursor: pointer;
-    font-size: 16px;
 }
 
 /* Style for form submit button on hover */
 .Joinus input[type="submit"]:hover {
-    background-color: green;
+    background-color: #45a049;
 }
-
-/* CSS for responsiveness */
-.submit-button {
-    padding: 10px 20px; /* Adjust padding as needed */
-    font-size: 16px; /* Adjust font size as needed */
-    background-color: #007bff; /* Button background color */
-    color: #fff; /* Text color */
-    border: none; /* Remove default button border */
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth transition for background color */
-}
-
-.submit-button:hover {
-    background-color: #0056b3; /* Darker background color on hover */
-}
-
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-    .submit-button {
-        width: 100%; /* Full width button on smaller screens */
-    }
-}
-
 
 .home6 {
     background: #45351b;
     padding: 2rem 0;
-    margin-top: -79px;
-
+    margin-top: 10px;
 }
 
 .footer, .footerlist ul {
@@ -510,7 +404,7 @@ nav ul {
 
 .footerimg img {
     max-width: 9%;
-    height: 5rem 0;
+    height: auto;
 }
 .footer {
     gap: 5rem;
@@ -544,12 +438,12 @@ footer ul {
     font-size: 16px;
     text-transform: uppercase;
     padding: 20px 10px;
-    transition: color 0.3s ease;
+    transition: color 0.1s ease;
 }
-
 
 .social a {
     color: var(--color-primary);
+    align-items: center;
 }
 .home6 .end {
     color: #fff;
@@ -559,122 +453,3 @@ hr {
     margin: 0rem 0;
     width: 100%;
 }
-/* .test{
-    position: relative;
-    top: 90px;
-    margin: 50px;
-    height: auto;
-    width: auto;
-    padding: 20px;
-    background-color: pink;
-}
-
-.test h1{
-    text-align: center;
-}
-
-.test hr{
-    width: 80%;
-    border: 2px solid black;
-    border-radius: 50px;
-}
-
-.testrun{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
-    padding: 20px;
-    gap: 30px;
-}
-
-.section2{
-    background-color: #808080;
-    text-align: center;
-    margin-top: 50px;
-    padding-top: 50px;
-    line-height: 30px;
-    position: relative;
-}
-
-.section1 h1{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    height: 100px;
-
-}
-
-.team {
-    position: relative;
-    top: 90px;
-    margin: 50px;
-    height: auto;
-}
-
-.team-member {
-    display: flex;
-    position: relative;
-    justify-content: center
-} */
-
-/* .first-image{
-    text-align: center;
-}
-
-.first-image img{
-    margin-top: 10px;
-    width: 500px;
-    height: auto;
-}
-
-.second-section{
-    padding: 0 100px;
-    margin-top: 15px;
-}
-
-.second-images{
-    color: blue;
-    display: grid;
-    align-items: center;
-    background-color: none;
-    place-items: center;
-    max-width: 100%;
-    height: auto;
-    
-}
-
-.services-container {
-    margin-bottom: 3rem;
-    margin-top: 3rem;
-} */
-
-/* .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    g
-    justify-content: center;
-    align-items: center;
-} */
-
-/* #service{
-    display: flex;
-    justify-content: space-between; /* Adjusts spacing between items */
-/* flex-wrap: wrap; /* Allows items to wrap on smaller screens */
-*/
-/* .service-file {
-    text-align: right;
-    align-items: center;
-   
-    padding-top: 20px;
-} */
-
-/* .service-setting image{
-    display: grid;
-    align-items: center;
-    margin-top: 20px;
-    flex: 100; /* Ensures each service item takes up equal space */
-/* min-width: 300px; /* Adjust based on your design */
