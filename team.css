@@ -413,15 +413,12 @@ nav ul {
         width: 100%; /* Full width button on smaller screens */
     }
 }
+
 .home6 {
     background: #45351b;
     padding: 2rem 0;
-    margin-top: -59px;
-    border: 3px solid var(--blackcolor);
-    background-color: var(--blackcolor);
-    position: relative;
-    top: -59px;
-    padding-top: 90px;
+    margin-top: -79px;
+
 }
 
 .footer, .footerlist ul {
