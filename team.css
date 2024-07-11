@@ -241,7 +241,6 @@ nav ul {
 
 }
 
-
 .box4 {
     padding: 50px; /* Adjusted shorthand padding */
     text-align: center;
@@ -298,7 +297,7 @@ nav ul {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     gap: 10px;
 }
 
@@ -324,6 +323,7 @@ nav ul {
 .Team-group h6 {
     margin: 10px 0 0;
 }
+  
 
 #contact {
     padding: 50px 0;

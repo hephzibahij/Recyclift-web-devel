@@ -297,6 +297,7 @@ nav ul {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    gap: 10px;
 }
 
 .Team-container h1 {
@@ -315,7 +316,6 @@ nav ul {
     width: 100%;
     height: auto;
     display: block;
-    display: fixed;
 }
 
 .Team-group h5,
@@ -343,6 +343,8 @@ nav ul {
     color: var(--color-green);
     font-size: 2.5rem;
     text-align: center;
+    margin-bottom: auto;
+
 }
 
 .contact-image img {
@@ -355,6 +357,7 @@ nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .contact-text .item {
