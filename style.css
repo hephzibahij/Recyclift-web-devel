@@ -156,7 +156,7 @@ nav ul {
 
 .abt h2,
 .abt h3 {
-    font-size: 90px;
+    font-size: 98px;
     line-height: 50px;
     /* width: 100%;
     align-self: center; */
@@ -554,7 +554,7 @@ i {
       align-items: center;
       justify-content: center;
       gap: 3rem;
-      margin-top: 0%;
+      margin-top: 30%;
       margin-bottom: 1rem;
       color: var(--color-neg);
       font-size: 1.3rem;
