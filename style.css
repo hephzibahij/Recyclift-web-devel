@@ -156,7 +156,7 @@ nav ul {
 
 .abt h2,
 .abt h3 {
-    font-size: 50px;
+    font-size: 60px;
     line-height: 50px;
     /* width: 100%;
     align-self: center; */
@@ -341,20 +341,20 @@ nav ul {
 }
 .contact-container h1 {
     color: white;
-    font-size: 6.76rem; /* Example: 2.5 times the base font size */;
+    font-size: 7.9rem; /* Example: 2.5 times the base font size */;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    line-height: 3cap;
     margin-bottom: auto;
-    transition: font-weight 0.3s ease;
 
 }
 
 .contact-image{
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
 }
 .contact-image img {
-    max-width: 100%;
+    max-width: 200%;
     height: auto;
     border-radius: 0.2rem;
     width: 100%;
@@ -474,6 +474,7 @@ i {
 .Joinus input[type="text"],
 .Joinus input[type="email"],
 .Joinus input[type="education"],
+.Joinus input[type="file"],
 .Joinus input[type="tel"],
 .Joinus input[type="date"],
 .Joinus select,
@@ -540,6 +541,12 @@ i {
   
   .home6 .end {
       color: #ffffff;
+
+
+  }
+
+  .footer hr {
+    margin-top: 30%;
   }
   
   .end .social {
@@ -547,6 +554,7 @@ i {
       align-items: center;
       justify-content: center;
       gap: 3rem;
+      margin-top: 0%;
       margin-bottom: 1rem;
       color: var(--color-neg);
       font-size: 1.3rem;
@@ -554,6 +562,7 @@ i {
   
   .social a{
       color: var(--color-primary);
+
   }
   
   .social a:hover{

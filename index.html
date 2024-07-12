@@ -33,13 +33,13 @@
 
                 </li>
                 <li>
-                    <a href="about.html">About</a>
+                    <a href="./about.html">About</a>
                 </li>
                 <li>
-                    <a href="services.html">Service</a>
+                    <a href="./services.html">Service</a>
                 </li>
                 <li>
-                    <a href="team.html" class="active">Team</a>
+                    <a href="./team.html" class="active">Team</a>
                 </li>
                 <li><a href="./contact.html">Contact</a></li>
                 <span></span>
@@ -48,7 +48,7 @@
                 </li>
                 <li class="Joinus">
                     <span></span>
-                    <a href="#joinus" aria-label="Join Us">Join US</a>
+                    <a href="./joinus.html" aria-label="Join Us">JoinUS</a>
                 </li>
             </ul>
         </nav>
@@ -150,8 +150,10 @@
 
     <section class="box5" id="joinus">
         <h3>Join Us</h3>
+        <p>Join our team and be part of a dynamic and innovative community that is revolutionizing technology for the better. We value creativity, commitment, and the drive to make a difference.</p>
         <div class="Joinus">
             <div id="join-us-button-container"></div>
+            <h2>Register for Job Opportunities</h2>
             <form id="join-us-form" action="submit.php" method="POST">
                 <label for="name">First Name:</label>
                     <input type="text" name="First name" placeholder="Your Name" required=""><br>
@@ -175,6 +177,19 @@
                     <option value="phd">PhD</option>
                     <option value="other">Other</option>
                 </select><br><br>
+
+                <label for="position">Position Applying For:</label>
+                <select id="position" name="position" required>
+                    <option value="">Select a position</option>
+                    <option value="software-engineer">Software Engineer</option>
+                    <option value="product-manager">Product Manager</option>
+                    <option value="ui-ux-designer">UI/UX Designer</option>
+                    <option value="marketing-specialist">Marketing Specialist</option>
+                </select><br><br>
+
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume" required><br>
+                <br>
                 
                 <label for="phone-code">Country Code:</label>
                 <select id="phone-code" name="phone-code" required>
@@ -194,7 +209,7 @@
                 <label for="address">Address:</label><br>
                 <textarea id="address" name="address" rows="2" cols="50" required></textarea><br><br>
                 
-                <label for="reason">Why do you want to be part of the Team:</label><br>
+                <label for="reason">Become an Agent:</label><br>
                 <textarea id="reason" name="reason" rows="4" cols="50" required></textarea><br><br>
                 
                 <input type="submit" value="Submit" class="submit-button">

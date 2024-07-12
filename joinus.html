@@ -151,6 +151,7 @@
         </section> -->
         <section class="box5">
             <h3>Join Us</h3>
+            <p>Join our team and be part of a dynamic and innovative community that is revolutionizing technology for the better. We value creativity, commitment, and the drive to make a difference.</h1>
             <div class="Joinus">
                 <div id="join-us-button-container"></div>
                 <form id="join-us-form" action="submit.php" method="POST">
@@ -178,6 +179,19 @@
                         <option value="phd">PhD</option>
                         <option value="other">Other</option>
                     </select><br><br>
+
+                    <label for="position">Position Applying For:</label>
+                <select id="position" name="position" required>
+                    <option value="">Select a position</option>
+                    <option value="software-engineer">Software Engineer</option>
+                    <option value="product-manager">Product Manager</option>
+                    <option value="ui-ux-designer">UI/UX Designer</option>
+                    <option value="marketing-specialist">Marketing Specialist</option>
+                </select><br><br>
+
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume" required><br>
+                <br>
                     
                     <label for="phone-code">Country Code:</label>
                     <select id="phone-code" name="phone-code" required>
