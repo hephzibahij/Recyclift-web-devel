@@ -149,14 +149,14 @@ nav ul {
 
 .abt {
     align-items: center;
-    padding: 50px;
-    margin-top: 20px;
+    padding: 20px;
+    margin-top: 10px;
 
 }
 
 .abt h2,
 .abt h3 {
-    font-size: 110px;
+    font-size: 60px;
     line-height: 50px;
     /* width: 100%;
     align-self: center; */
@@ -478,6 +478,7 @@ nav ul {
       display: flex;
       align-items: center;
       justify-content: center;
+      margin-top: 0%;
       gap: 3rem;
       margin-bottom: 1rem;
       color: var(--color-neg);
