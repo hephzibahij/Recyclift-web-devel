@@ -66,6 +66,14 @@ nav ul {
     color: var(--blackcolor);
 }
 
+.hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 .nav-menu a:hover {
     color: var(--blackcolor);
     background-color: var(--darkgreencolor);
