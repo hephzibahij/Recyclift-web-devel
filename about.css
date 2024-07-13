@@ -164,7 +164,7 @@ nav ul {
 
 .abt h2,
 .abt h3 {
-    font-size: 60px;
+    font-size: 100px;
     line-height: 50px;
     /* width: 100%;
     align-self: center; */
@@ -173,8 +173,8 @@ nav ul {
 }
 
 .abt h2 hr {
-    border: 3px solid var(--whitecolor);
-    width: 30%;
+    border: 4px solid var(--whitecolor);
+    width: 40%;
     margin: 0 auto;
     border-radius: 50%;
 }
@@ -474,7 +474,7 @@ nav ul {
 
 .home6 {
     background: #45351b;
-    padding: 2rem 0;
+    padding: 3rem 0;
     margin-top: -79px;
   }
   
