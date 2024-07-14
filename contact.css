@@ -335,10 +335,10 @@ nav ul {
 
 #contact {
     padding: 50px 0;
-    background-color: linear-gradient(to bottom, #4CAF50 0%, #f9f9f9 100%);;
+    background-color: linear-gradient(to bottom, #4CAF50 0%, 100%);;
     text-align: center;
-    color: #049804;
-    background-color: greenyellow;
+    color: white;
+    background-color: white;
     position: relative;
     top: -59px;
     padding-top: 80px;
@@ -350,7 +350,7 @@ nav ul {
     padding: 0 20px;
 }
 .contact-container h1 {
-    color: var(--color-green);
+    color: var(--whitecolor);
     font-size: 7.9rem;
     text-align: center;
     margin-bottom: auto;

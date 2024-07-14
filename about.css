@@ -144,7 +144,7 @@ nav ul {
 }
 
 .box2 {
-    background-color: var(--greycolor);
+    background-color: var(--whitecolor);
     height: 600px;
     position: relative;
     margin-top: 0;
@@ -164,7 +164,7 @@ nav ul {
 
 .abt h2,
 .abt h3 {
-    font-size: 100px;
+    font-size: 90px;
     line-height: 50px;
     /* width: 100%;
     align-self: center; */
@@ -173,7 +173,7 @@ nav ul {
 }
 
 .abt h2 hr {
-    border: 4px solid var(--whitecolor);
+    border: 4px solid var(--darkgreencolor);
     width: 40%;
     margin: 0 auto;
     border-radius: 50%;
@@ -191,12 +191,12 @@ nav ul {
 }
 
 .box3 {
-    background-color: var(--darkgreencolor);
+    background-color: var(--whitecolor);
     height: auto;
     position: relative;
     margin-top: 0;
     justify-content: center;
-    top: -59px;
+    top: -5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -216,7 +216,7 @@ nav ul {
     line-height: 50px;
     /* width: 100%;
     align-self: center; */
-    color: var(--whitecolor);
+    color: var(--darkgreencolor);
     text-align: center;
 }
 
@@ -238,7 +238,7 @@ nav ul {
     text-align: center;
     font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--whitecolor);
+    color: var(--blackcolor);
 
 }
 

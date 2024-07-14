@@ -190,7 +190,7 @@ nav ul {
 }
 
 .box3 {
-    background-color: var(--darkgreencolor);
+    background-color: var(--whitecolor);
     height: auto;
     position: relative;
     margin-top: 0;
@@ -215,7 +215,7 @@ nav ul {
     line-height: 50px;
     /* width: 100%;
     align-self: center; */
-    color: var(--whitecolor);
+    color: var(--blackcolor);
     text-align: center;
 }
 
@@ -237,7 +237,7 @@ nav ul {
     text-align: center;
     font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--whitecolor);
+    color: var(--blackcolor);
 
 }
 

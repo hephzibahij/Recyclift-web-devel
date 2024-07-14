@@ -256,9 +256,9 @@ nav ul {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--whitecolor);
     border: 3px solid var(--blackcolor);
-    background-color: var(--darkgreencolor);
+    background-color: var(--blackcolor);
     position: relative;
-    top: -59px;
+    top: 70px;
     padding-top: 80px;
 }
 
@@ -331,7 +331,6 @@ nav ul {
 .Team-group h6 {
     margin: 10px 0 0;
 }
-  
 
 #contact {
     padding: 50px 0;
@@ -514,6 +513,11 @@ nav ul {
       color: var(--color-neg);
       font-size: 1.3rem;
   }
+
+  .footerimg img{
+    max-width: 16%;
+  }
+  
   
   .social a{
       color: var(--color-primary);
