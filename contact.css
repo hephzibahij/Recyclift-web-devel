@@ -351,7 +351,7 @@ nav ul {
 }
 .contact-container h1 {
     color: darkgreen;
-    font-size: 7.9rem; /* Example: 2.5 times the base font size */;
+    font-size: 9.9rem; /* Example: 2.5 times the base font size */;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     line-height: 3cap;
@@ -510,7 +510,7 @@ i {
 
 .home6 {
     background: #45351b;
-    padding: 3rem 0;
+    padding: 7rem 0;
     margin-top: -80px;
     
   }
