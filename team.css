@@ -254,9 +254,9 @@ nav ul {
     text-align: center;
     font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--whitecolor);
-    border: 3px solid var(--blackcolor);
-    background-color: var(--blackcolor);
+    color: var(--blackcolor);
+    border: 3px solid var(--whitecolor);
+    background-color: var(--whitecolor);
     position: relative;
     top: 70px;
     padding-top: 80px;
@@ -280,7 +280,7 @@ nav ul {
 }
 
 .Team h1 br {
-    border: 3px solid var(--blackcolor);
+    border: 3px solid var(--whitecolor);
     width: 20%;
     margin: 0 auto;
     border-radius: 50%;
@@ -318,7 +318,7 @@ nav ul {
     width: 150px; /* Reduced width */
     margin: 10px;
     vertical-align: top;
-    border-bottom: 2px solid var(--blackcolor); /* Added bottom border */
+    border-bottom: 2px solid var(--whitecolor); /* Added bottom border */
 }
 
 .Team-image img {
@@ -410,14 +410,16 @@ nav ul {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     text-align: center;
-    border: 3px solid var(--blackcolor);
+    border: 3px solid var(--color);
     background-color: var(--greycolor);
     top: -59px;
     height: auto;
     position: relative;
-    border-radius: 5px;
+    border-radius: 0px;
     margin-bottom: 20px;
+    justify-content: center;
 }
+
 
 /* Style for the Join Us form */
 .Joinus {
@@ -436,18 +438,22 @@ nav ul {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
+    display: flex;
 
 }
+
 
 /* Style for form inputs and textareas */
 .Joinus input[type="text"],
 .Joinus input[type="email"],
+.Joinus input[type="education"],
+.Joinus input[type="file"],
 .Joinus input[type="tel"],
 .Joinus input[type="date"],
 .Joinus select,
 .Joinus textarea {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     display: flex;
@@ -455,20 +461,25 @@ nav ul {
     box-sizing: border-box; /* Ensure padding and border are included in width */
 }
 
+.Joinus textarea {
+    resize: vertical;
+  }
+
 /* Style for form submit button */
 .Joinus input[type="submit"] {
-    background-color: #4CAF50;
     width: 100%;
+    background-color: #4CAF50;
     color: white;
     padding: 10px 15px;
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 /* Style for form submit button on hover */
 .Joinus input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: green;
 }
 
 /* CSS for responsiveness */
@@ -495,8 +506,8 @@ nav ul {
 
 .home6 {
     background: #45351b;
-    padding: 2rem 0;
-    margin-top: -79px;
+    padding: 9rem 0;
+    margin-top: -7px;
     
   }
   
@@ -514,8 +525,8 @@ nav ul {
       font-size: 1.3rem;
   }
 
-  .footerimg img{
-    max-width: 16%;
+  .footerimg img{    
+    max-width: 36%;
   }
   
   

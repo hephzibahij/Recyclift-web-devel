@@ -335,13 +335,13 @@ nav ul {
 
 #contact {
     padding: 50px 0;
-    background-color: linear-gradient(to bottom, #4CAF50 0%, 100%);;
+    background-color: linear-gradient(to bottom,  0%, #f9f9f9 100%);;
     text-align: center;
-    color: white;
+    color: green;
     background-color: white;
     position: relative;
     top: -59px;
-    padding-top: 80px;
+    padding-top: 60px;
 }
 
 .contact-container {
@@ -350,18 +350,24 @@ nav ul {
     padding: 0 20px;
 }
 .contact-container h1 {
-    color: var(--whitecolor);
-    font-size: 7.9rem;
+    color: darkgreen;
+    font-size: 7.9rem; /* Example: 2.5 times the base font size */;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    margin-bottom: auto;
     line-height: 3cap;
+    margin-bottom: auto;
 
 }
 
+.contact-image{
+    width: 100%;
+    margin: 0 auto;
+}
 .contact-image img {
-    max-width: 100%;
+    max-width: 200%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 0.2rem;
+    width: 100%;
 }
 
 .contact-text {
@@ -370,6 +376,28 @@ nav ul {
     align-items: center;
 
 }
+
+.item{
+    padding-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.item p{
+    text-align: center;
+}
+
+i {
+    font-size: 1.45rem;
+}
+
+
+.contact-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 1rem; */
+}
+
 
 .contact-text .item {
     margin: 20px 0;
@@ -389,7 +417,7 @@ nav ul {
 }
 
 .contact-text .item h4 {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 10px;
     color: #666;
 }
@@ -405,10 +433,15 @@ nav ul {
         align-items: center;
     }
 
+    .item p{
+        text-align: center;
+    }
+
     .contact-image {
         margin-bottom: 20px;
     }
 }
+
 /* Style for the Join Us section */
 .box5 {
     padding: 20px;
@@ -477,64 +510,93 @@ nav ul {
 
 .home6 {
     background: #45351b;
-    padding: 2rem 0;
-    margin-top: 10px;
-}
-
-.footer, .footerlist ul {
-    align-items: center;
-    display: flex;
+    padding: 3rem 0;
+    margin-top: -80px;
     
+  }
+  
+  .home6 .end {
+      color: #ffffff;
+
+
+  }
+
+  .footer hr {
+    position: absolute; /* Position the HR element absolutely */
+    bottom: 10px; /* Adjust the bottom position as needed */
+    width: 100%; /* Ensure full width */
+    margin: 0; /* Remove default margin */
 }
 
-.footerimg img {
-    max-width: 9%;
-    height: auto;
-}
-.footer {
-    gap: 5rem;
-    row-gap: 4rem;
-    column-gap: 4rem;
-    justify-content: center;
-    display: flex;
-    flex-direction: wrap;
-    align-items: center;
+  .end .social {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      margin-top: 10px;
+      margin-bottom: 1rem;
+      color: var(--color-neg);
+      font-size: 1.3rem;
+  }
+  
+  .social a{
+      color: var(--color-primary);
 
-}
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+  }
+  
+  .social a:hover{
+      color: rgb(207, 206, 206);
+  }
+  
+  .footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4rem;
+      
+  }
+
+  .footerimg img{
+    max-width: 26%;
+  }
+  
+  .footerlist ul {
+      list-style: none;
+      display: flex;
+      text-align: bold;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+  }
+  
+  .footer hr {
+    position: absolute; /* Position the HR element absolutely */
+    bottom: 10px; /* Adjust the bottom position as needed */
+    width: 100%; /* Ensure full width */
+    margin: 0; /* Remove default margin */
 }
 
-footer ul {
-    display: flex;
-    justify-content: flex-end;
-    gap: 15px;
-}
 
-.footerlist ul li {
-    display: inline;
-}
-
-.footerlist ul li a {
-    color: white;
-    font-size: 16px;
-    text-transform: uppercase;
-    padding: 20px 10px;
-    transition: color 0.1s ease;
-}
-
-.social a {
-    color: var(--color-primary);
-    align-items: center;
-}
-.home6 .end {
-    color: #fff;
-}
-
-hr {
-    margin: 0rem 0;
-    width: 100%;
-}
+  .footerlist li a {
+      color: #ffffff;
+      text-decoration: none;
+      transition: 800ms all ease;
+  }
+  
+  .footerlist li a:hover{
+      color: var(--color-neg);
+  }
+  
+  .copy {
+      text-align: center;
+      color: var(--color-primary) !important;
+      font-size: 0.9rem;
+  }
+  
+  @media screen and (max-width: 698px) {
+  
+      .footerlist ul {
+          display: block;
+      }
+  }

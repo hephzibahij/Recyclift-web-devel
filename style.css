@@ -370,7 +370,7 @@ nav ul {
     background-color: var(--whitecolor);
     position: relative;
     top: 80px;
-    padding-top: 80px;
+    padding-top: -60px;
 }
 
 .box4 h1 hr{
@@ -654,7 +654,7 @@ i {
 .home6 {
     background: #45351b;
     padding: 3rem 0;
-    margin-top: 79px;
+    margin-top: -80px;
     
   }
   

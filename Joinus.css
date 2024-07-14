@@ -408,14 +408,16 @@ nav ul {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     text-align: center;
-    border: 3px solid var(--blackcolor);
+    border: 3px solid var(--color);
     background-color: var(--greycolor);
     top: -59px;
     height: auto;
     position: relative;
-    border-radius: 5px;
+    border-radius: 0px;
     margin-bottom: 20px;
+    justify-content: center;
 }
+
 
 /* Style for the Join Us form */
 .Joinus {
@@ -425,7 +427,7 @@ nav ul {
 
 /* Style for the form heading */
 .Joinus h3 {
-    font-size: 25px;
+    font-size: 24px;
     margin-bottom: 20px;
 }
 
@@ -434,38 +436,79 @@ nav ul {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
+    display: flex;
 
 }
+
+h1, h3 {
+    color: #333;
+    font-size: 36px;
+}
+
+.box5 h3 {
+    font-size: 21px;
+    color: #333;
+    margin-bottom: 7.8rem;
+}
+
+
+.box5 p {
+    font-size: 38px;
+    line-height: 1.5;
+    margin-bottom: 41px;
+}
+
+.Joinus h1 {
+    font-size: 23px;
+    margin-bottom: 48px;
+}
+
 
 /* Style for form inputs and textareas */
 .Joinus input[type="text"],
 .Joinus input[type="email"],
+.Joinus input[type="education"],
+.Joinus input[type="file"],
 .Joinus input[type="tel"],
 .Joinus input[type="date"],
 .Joinus select,
 .Joinus textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 8px;
     border: 1px solid #ccc;
     display: flex;
     border-radius: 3px;
     box-sizing: border-box; /* Ensure padding and border are included in width */
 }
 
+.Joinus input[type="text"] {
+    padding: 17px;
+    width: 
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.Joinus textarea {
+    resize: vertical;
+  }
+
 /* Style for form submit button */
 .Joinus input[type="submit"] {
+    width: 100%;
     background-color: #4CAF50;
     color: white;
     padding: 10px 15px;
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 /* Style for form submit button on hover */
 .Joinus input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: green;
 }
 
 /* CSS for responsiveness */
@@ -489,6 +532,7 @@ nav ul {
         width: 100%; /* Full width button on smaller screens */
     }
 }
+
 
 .home6 {
     background: #45351b;
