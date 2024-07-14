@@ -56,6 +56,7 @@ nav ul {
 
 }
 
+
 .hamburger {
     background: none;
     border: none;
@@ -446,6 +447,84 @@ nav ul {
     height: 250px;
 }
 
+.services-container {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.services-container h1{
+    color: var(--color-green);
+    text-align: center;
+    font-size: 2.9rem;
+    padding-bottom: 1rem;
+
+}
+
+.services-container > p{
+    text-align: center;
+    padding-bottom: 1rem;
+    color: var(--color-neg);
+    font-size: 2.1rem;
+}
+
+.service-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.service-card{
+    padding: 1rem 1rem;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: 1000ms all ease;
+    border: 2px solid var(--color-brown);
+    border-left: 8px solid var(--color-green);  
+    border-right: 8px solid var(--color-green);  
+}
+
+.service-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 3px 3px 3px rgb(43, 45, 44);
+}
+
+.service-card p {
+    color: var(--color-neg);
+    text-align: start;
+}
+
+.icon-container {
+    font-size: 3rem;
+    color: var(--color-neg);
+}
+
+
+
+.service-card h2{
+    color: var(--color-neg);
+    padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+    .service-card{
+        display: block;
+        text-align: center;
+    }
+
+    .service-card p {
+    text-align: center;
+}
+}
+
+
+@media screen and (max-width: 700px) {
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .box4 {
     padding: 50px; /* Adjusted shorthand padding */
     text-align: center;
@@ -786,7 +865,7 @@ i {
   }
 
   .footerimg img{
-    max-width: %;
+    max-width: 18%;
   }
   
   .footerlist ul {
