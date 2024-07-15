@@ -148,34 +148,31 @@ nav ul {
     height: 600px;
     position: relative;
     margin-top: 0;
-    justify-content: center;
-    top: -19px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .abt {
-    align-items: center;
     padding: 20px;
-    margin-top: 10px;
-
+    margin-top: auto; /* Push .abt to the bottom of .box2 */
+    text-align: center; /* Center align content */
 }
 
 .abt h2,
 .abt h3 {
     font-size: 7.5rem;
-    line-height: 90px;
-    /* width: 100%;
-    align-self: center; */
+    line-height: 98px;
     color: var(--blackcolor);
     text-align: center;
 }
 
 .abt p {
-    font-size: 2.5em;
+    font-size: 4.5em;
     color: #666;
+    text-align: center;
 }
+
 .abt h2 hr {
     border: 4px solid var(--darkgreencolor);
     width: 40%;
@@ -188,11 +185,12 @@ nav ul {
 }
 
 .abt p {
-    text-align: center;
     font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
-
 }
+
+
+
 
 .box3 {
     background-color: var(--whitecolor);

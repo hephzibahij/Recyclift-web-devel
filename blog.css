@@ -56,6 +56,88 @@ nav ul {
 
 }
 
+
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 35px;
+    position: relative;
+    
+    appearance: none;
+    outline: none;
+    border: none;
+    display: block;
+
+}
+
+.hamburger.bar, .hamburger:after, .hamburger:before {
+    content:'';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active.bar {
+    opacity: 0;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    display: block
+    z-index: 98;
+    background-color: green;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 120px;
+    transition: 0.4s;
+}
+    .mobile-nav a {
+        display: block;
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto 16px;
+        text-align: center;
+        margin-bottom: 16px;
+        padding: 12px 16px;
+        background-color: #987598;
+
+        color: white;
+        text-decoration: none;
+
+    }
+
+.mobile-nav.is-active {
+    left: 0;
+}
+
+.mobile-nav a:hover {
+    background-color: #007bff;
+}
+
+@media (min-width: 768px) {
+   .mobile-nav {
+    display: none;
+
+
+   }
+   .hamburger {
+    display: none;
+   }
+}
 .nav-menu a {
     text-decoration: none;
     padding: 10px;
@@ -75,14 +157,6 @@ nav ul {
     color: #999;
 }
 
-.hamburger {
-    display: none;
-    font-size: 24px;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
 .nav-menu .Joinus {
     background-color: var(--darkgreencolor);
     color: var(--blackcolor);
@@ -94,8 +168,80 @@ nav ul {
     width: 10px;
 }
 
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Display hamburger button on smaller screens */
+    }
+
+    .nav-menu {
+        display: none; /* Hide desktop navigation menu on smaller screens */
+    }
+
+    .mobile-nav {
+        display: flex; /* Show mobile navigation menu on smaller screens */
+    }
+
+    .mobile-nav.open {
+        display: flex; /* Ensure mobile navigation menu is visible when open */
+    }
+
+    /* Hamburger animation styles */
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .mobile-nav {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        left: 0;
+    }
+
+    .mobile-nav a {
+        color: #fff;
+        padding: 1rem;
+        text-decoration: none;
+        border-bottom: 1px solid #444;
+    }
+}
 .box1 {
-    background-color: var(--darkgreencolor);
+    background-color: var(--whitecolor);
 }
 
 .about_us {
@@ -113,15 +259,15 @@ nav ul {
 }
 
 .about_us1 h2 {
-    font-size: 50px;
+    font-size: 60px;
     line-height: 50px;
     /* width: 100%;
     align-self: center; */
-    color: var(--whitecolor);
+    color: var(--blackcolor);
 }
 
 .about_us h2 hr {
-    border: 3px solid var(--blackcolor);
+    border: 3px solid var(--darkgreencolor);
     width: 80%;
     margin: 0 auto;
     border-radius: 50%;
@@ -131,7 +277,7 @@ nav ul {
 .about_us1 p {
     font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
-    color: var(--whitecolor);
+    color: var(--blackcolor);
 }
 
 
@@ -143,8 +289,62 @@ nav ul {
 
 }
 
+.btn-success {
+    background: transparent;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: transparent;
+    border: 2px solid #0f7909;
+    border: 2px solid var(--color-green);
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: initial;
+    border-right-color: initial;
+    border-bottom-color: initial;
+    border-left-color: initial;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    border-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    font-size: 1.2rem;
+    outline: none;
+    outline-color: initial;
+    outline-style: none;
+    outline-width: initial;
+    padding: 1rem 1.5rem;
+    padding-top: 1rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    transition: all .4s ease;
+    transition-behavior: normal;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+}
+
+
 .box2 {
-    background-color: var(--greycolor);
+    background-color: var(--whitecolor);
     height: 600px;
     position: relative;
     margin-top: 0;
@@ -164,16 +364,14 @@ nav ul {
 
 .abt h2,
 .abt h3 {
-    font-size: 50px;
-    line-height: 50px;
-    /* width: 100%;
-    align-self: center; */
-    color: var(--blackcolor);
+    font-size: 60px;
+    line-height: 70px;
+    color: darkred;
     text-align: center;
 }
 
 .abt h2 hr {
-    border: 3px solid var(--whitecolor);
+    border: 3px solid var(--darkgreencolor);
     width: 30%;
     margin: 0 auto;
     border-radius: 50%;
@@ -191,12 +389,12 @@ nav ul {
 }
 
 .box3 {
-    background-color: var(--darkgreencolor);
+    background-color: var(--);
     height: auto;
     position: relative;
     margin-top: 0;
     justify-content: center;
-    top: 40px;
+    top: -59px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -216,7 +414,7 @@ nav ul {
     line-height: 50px;
     /* width: 100%;
     align-self: center; */
-    color: var(--whitecolor);
+    color: var(--darkgreencolor);
     text-align: center;
 }
 
@@ -236,9 +434,9 @@ nav ul {
 
 .services p {
     text-align: center;
-    font-size: 22px;
+    font-size: 29px;
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--whitecolor);
+    color: var(--blackcolor);
 
 }
 
@@ -246,25 +444,101 @@ nav ul {
 .abt-img img {
     width: 300px;
     height: 250px;
+}
+
+.services-container {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.services-container h1{
+    color: var(--color-green);
+    text-align: center;
+    font-size: 2.9rem;
+    padding-bottom: 1rem;
 
 }
 
+.services-container > p{
+    text-align: center;
+    padding-bottom: 1rem;
+    color: var(--color-neg);
+    font-size: 2.1rem;
+}
+
+.service-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.service-card{
+    padding: 1rem 1rem;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: 1000ms all ease;
+    border: 2px solid var(--color-brown);
+    border-left: 8px solid var(--color-green);  
+    border-right: 8px solid var(--color-green);  
+}
+
+.service-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 3px 3px 3px rgb(43, 45, 44);
+}
+
+.service-card p {
+    color: var(--color-neg);
+    text-align: start;
+}
+
+.icon-container {
+    font-size: 3rem;
+    color: var(--color-neg);
+}
+
+
+
+.service-card h2{
+    color: var(--color-neg);
+    padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+    .service-card{
+        display: block;
+        text-align: center;
+    }
+
+    .service-card p {
+    text-align: center;
+}
+}
+
+
+@media screen and (max-width: 700px) {
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 .box4 {
     padding: 50px; /* Adjusted shorthand padding */
     text-align: center;
     font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--whitecolor);
-    border: 3px solid var(--blackcolor);
-    background-color: var(--blackcolor);
+    color: var(--blackcolor);
+    border: 3px solid var(--whitecolor)
+    background-color: var(--whitecolor);
     position: relative;
-    top: -59px;
-    padding-top: 80px;
+    top: 80px;
+    padding-top: -60px;
 }
 
 .box4 h1 hr{
-    width: 30%;
+    width: 50%;
     margin: 0 auto;
     margin-top: 0px;
     margin-right: auto;
@@ -281,7 +555,7 @@ nav ul {
 }
 
 .Team h1 br {
-    border: 3px solid var(--blackcolor);
+    border: 3px solid var(--whitecolor);
     width: 20%;
     margin: 0 auto;
     border-radius: 50%;
@@ -296,8 +570,8 @@ nav ul {
 
 .Team h1,
 .Team h3 {
-    font-size: 50px;
-    line-height: 50px;
+    font-size: 80px;
+    line-height: 60px;
     color: var(--whitecolor);
     text-align: center;
 }
@@ -306,7 +580,8 @@ nav ul {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 10px;
 }
 
 .Team-container h1 {
@@ -318,7 +593,7 @@ nav ul {
     width: 150px; /* Reduced width */
     margin: 10px;
     vertical-align: top;
-    border-bottom: 2px solid var(--blackcolor); /* Added bottom border */
+    border-bottom: 2px solid var(--whitecolor); /* Added bottom border */
 }
 
 .Team-image img {
@@ -331,8 +606,6 @@ nav ul {
 .Team-group h6 {
     margin: 10px 0 0;
 }
-
-
 #contact {
     padding: 50px 0;
     background-color: linear-gradient(to bottom,  0%, #f9f9f9 100%);;
@@ -350,8 +623,8 @@ nav ul {
     padding: 0 20px;
 }
 .contact-container h1 {
-    color: red;
-    font-size: 14.9rem; /* Example: 2.5 times the base font size */;
+    color: darkgreen;
+    font-size: 7.9rem; /* Example: 2.5 times the base font size */;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     line-height: 3cap;
@@ -364,7 +637,7 @@ nav ul {
     margin: 0 auto;
 }
 .contact-image img {
-    max-width: 900%;
+    max-width: 200%;
     height: auto;
     border-radius: 0.2rem;
     width: 100%;
@@ -442,20 +715,21 @@ i {
     }
 }
 
-/* Style for the Join Us section */
 .box5 {
     padding: 20px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     text-align: center;
-    border: 3px solid var(--blackcolor);
+    border: 3px solid var(--color);
     background-color: var(--greycolor);
     top: -59px;
     height: auto;
     position: relative;
-    border-radius: 5px;
+    border-radius: 0px;
     margin-bottom: 20px;
+    justify-content: center;
 }
+
 
 /* Style for the Join Us form */
 .Joinus {
@@ -474,18 +748,22 @@ i {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
+    display: flex;
 
 }
+
 
 /* Style for form inputs and textareas */
 .Joinus input[type="text"],
 .Joinus input[type="email"],
+.Joinus input[type="education"],
+.Joinus input[type="file"],
 .Joinus input[type="tel"],
 .Joinus input[type="date"],
 .Joinus select,
 .Joinus textarea {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     display: flex;
@@ -493,24 +771,93 @@ i {
     box-sizing: border-box; /* Ensure padding and border are included in width */
 }
 
+.Joinus textarea {
+    resize: vertical;
+  }
+
 /* Style for form submit button */
 .Joinus input[type="submit"] {
+    width: 100%;
     background-color: #4CAF50;
     color: white;
     padding: 10px 15px;
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 /* Style for form submit button on hover */
 .Joinus input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: green;
+}
+
+/* CSS for responsiveness */
+.submit-button {
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Text color */
+    border: none; /* Remove default button border */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .submit-button {
+        width: 100%; /* Full width button on smaller screens */
+    }
+}
+
+.blog{
+    display: grid;
+    padding: 8rem 0 6rem 0;
+    gap: 2rem;
+}
+
+.textwrap{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.textwrap img{
+    height: 40vh;
+    width: 100%;
+    border-radius: 0.3rem;
+}
+
+.textwrap p{
+    text-align: justify;
+} 
+
+.blog-btn{
+    text-decoration: underline;
+    color: #000
+}
+
+@media screen and (max-width: 900px) {
+    .blog{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .blogwrap{
+        width: 100%;
+        padding: 0rem 0.5rem 1rem 0.5rem;
+        background: #f3f3f3;
+    }
+
 }
 
 .home6 {
     background: #45351b;
-    padding: 8rem 0;
+    padding: 3rem 0;
     margin-top: -80px;
     
   }
@@ -557,7 +904,7 @@ i {
   }
 
   .footerimg img{
-    max-width: 26%;
+    max-width: 18%;
   }
   
   .footerlist ul {
