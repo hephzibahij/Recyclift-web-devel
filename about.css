@@ -161,11 +161,12 @@ nav ul {
 
 .abt h2,
 .abt h3 {
-    font-size: 7.5rem;
-    line-height: 98px;
+    font-size: 6.7rem;
+    line-height: 90px;
     color: var(--blackcolor);
     text-align: center;
 }
+
 
 .abt p {
     font-size: 4.5em;
