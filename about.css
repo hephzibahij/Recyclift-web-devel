@@ -159,12 +159,8 @@ nav ul {
     text-align: center; /* Center align content */
 }
 
-.abt h2,
-.abt h3 {
-    font-size: 6.7rem;
-    line-height: 90px;
-    color: var(--blackcolor);
-    text-align: center;
+.abt h2 {
+    font-size: 28px;
 }
 
 
@@ -260,7 +256,7 @@ nav ul {
 .services-container h1{
     color: var(--color-green);
     text-align: center;
-    font-size: 2.9rem;
+    font-size: 1.9rem;
     padding-bottom: 1rem;
 
 }
@@ -269,7 +265,7 @@ nav ul {
     text-align: center;
     padding-bottom: 1rem;
     color: var(--color-neg);
-    font-size: 2.1rem;
+    font-size: 19px;
 }
 
 .service-grid{
@@ -589,7 +585,7 @@ nav ul {
   }
 
   .footerimg img{
-    max-width: 19%;
+    max-width: 36%;
   }
   
   .footerlist ul {

@@ -235,7 +235,7 @@ nav ul {
 
 .services p {
     text-align: center;
-    font-size: 22px;
+    font-size: 10px;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--blackcolor);
 
@@ -256,7 +256,7 @@ nav ul {
 .services-container h1{
     color: var(--color-green);
     text-align: center;
-    font-size: 9.9rem;
+    font-size: 189px;
     padding-bottom: 1rem;
 
 }
@@ -265,7 +265,7 @@ nav ul {
     text-align: center;
     padding-bottom: 1rem;
     color: var(--color-neg);
-    font-size: 2.1rem;
+    font-size: 20px;
 }
 
 .service-grid{
