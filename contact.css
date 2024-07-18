@@ -352,11 +352,10 @@ nav ul {
 
 .contact-container h1 {
     color: red;
-    font-size: 13.9rem; /* Example: 2.5 times the base font size */;
+    font-size: 60px; /* Example: 2.5 times the base font size */;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    line-height: 3cap;
-    margin-bottom: auto;
+    margin-top: 20%;
 
 }
 

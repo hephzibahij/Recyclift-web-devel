@@ -256,16 +256,16 @@ nav ul {
 .services-container h1{
     color: var(--color-green);
     text-align: center;
-    font-size: 189px;
-    padding-bottom: 1rem;
-
+    font-size: 40px;
+    margin-top: 20%;
+    
 }
 
 .services-container > p{
     text-align: center;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     color: var(--color-neg);
-    font-size: 20px;
+    font-size: 19px;
 }
 
 .service-grid{
