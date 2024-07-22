@@ -823,7 +823,9 @@ i {
 .textwrap{
     width: 100%;
     display: flex;
+    font-size: 30px;
     align-items: center;
+    margin-top: 20%;
     gap: 2rem;
 }
 .textwrap img{
