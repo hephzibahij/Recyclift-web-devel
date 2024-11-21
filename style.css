@@ -22,7 +22,22 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
-.Recyclift-header {
+.nav-menu {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 2rem;
+    padding-bottom: 1.5rem;
+    background-color: #333;
+    z-index: 99;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* .Recyclift-header {
     height: 100px;
     display: flex;
     align-items: center;
@@ -33,175 +48,199 @@ body {
     position: fixed;
     top: 0px;
     z-index: 1000;
-}
+} */
 
 .Recyclift-header img {
-    width: 70px;
+    width: 60px;
     height: auto;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-nav ul {
-    display: flex;
-    gap: 10px;
     font-size: 20px;
-    font-weight: big;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.nav-links {
+    display: flex;
     align-items: center;
+    gap: 1rem;
+    position: relative;
+    
 }
 
-.nav-menu li {
-    list-style-type: none;
-
+.nav-links li {
+    list-style: none;
+    height: 50px;
 
 }
+
+
+.nav-links li > a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+}
+
+.nav-links li > a:hover {
+    color: green;
+    transition: all 0.5s ease;
+
+}
+
+
 
 .hamburger-menu {
     cursor: pointer;
-    width: 30px;
-    height: 30px;
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
+    position: relative;
+    display: none;  
 }
 
-.hamburger-menu .bar {
-    width: 100%;
-    height: 4px;
-    background-color: white;
-    transition: 0.3s;
-}
 
-.nav-link {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
 
-.nav-link a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    transition: 0.3s;
-}
-
-.nav-link a:hover {
-    color: #ddd;
-}
 
 /*Respnsive Styling */
 @media (max-width: 768px) {
-   .hamburger-menu { 
-    display: flex;;
+    .hamburger-menu  {
+        display: block;
+        z-index: 99;
+        position: relative;
+    } 
+
+    .hamburger-menu .bar {
+        width: 30px;
+        margin: 5px 0;
+        height: 3px;
+        background-color: white;
+        transition: 0.3s;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 60%);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+        transform: translateX(1rem)
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform:translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform:translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-links {
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0px; 
+        transition: all 0.5s ease; 
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        padding-top: 70px;
+        background: black;
+        overflow: hidden;
+        visibility: hidden;
+
+
+    }
+
+    .nav-links.open {
+        visibility: visible;
+        height: 100vh;
+        transition: all 0,5s ease;
+
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links li > a {
+        display: block;
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    
 }
-
-.nav-link {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: #333;
-    flex-direction:column;
-    align-items: center;
-    justify-content: center;
-    transform: translate(-100%);
-    transition: transform 0.3s ease-in-out;
-
-}
-
-.nav-link li {
-    margin: 15px 0;
-
-}
-
-.nav-links.open {
-    transform: translateY(0);
-}
-}
-
-.nav-menu a {
-    text-decoration: none;
-    padding: 10px;
-    border: 0px;
-    font-size: 25px;
-    font-weight: bold;
-    border-radius: 4px;
-    color: var(--blackcolor);
-}
-
-.nav-menu a:hover {
-    color: var(--blackcolor);
-    background-color: var(--darkgreencolor);
-}
-
-.nav-solid #nav-trigger span {
-    color: #999;
-}
-
-.nav-menu .Joinus {
-    background-color: var(--darkgreencolor);
-    color: var(--blackcolor);
-    border-radius: 20px;
-    padding: 12px 19px;
-}
-
-.nav option {
-    width: 10px;
-}
-
 
 
 .box1 {
-    background-color: var(--whitecolor);
+    padding: 20px;
+    text-align: center;
 }
 
 .about_us {
-    line-height: 30px;
-    margin: 50px 50px 50px 50px;
-    position: relative;
-    background-color: var();
-    width: auto;
-    height: 560px;
-    color: var(--background2);
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 190px;
-}
-
-.about_us1 h2 {
-    font-size: 60px;
-    line-height: 50px;
-    /* width: 100%;
-    align-self: center; */
-    color: var(--blackcolor);
-}
-
-.about_us h2 hr {
-    border: 3px solid var(--darkgreencolor);
-    width: 80%;
     margin: 0 auto;
-    border-radius: 50%;
+    max-width: 1200px;
 }
 
-
-.about_us1 p {
-    font-size: 25px;
-    font-family: 'Times New Roman', Times, serif;
-    color: var(--blackcolor);
+.about_us1 {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
 }
 
-
-.about_us1 img {
-    width: 300px;
-    height: 300px;
-    align-self: center;
-    border-radius: 0%;
-
+h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
+hr {
+    width: 50px;
+    margin: auto;
+}
+
+p {
+    font-size: 2.2rem;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.btn-success {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: darkgreen;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/*Responsive style */
+@media (max-width: 768px) {
+    .about_us {
+        flex-direction: column;
+    }
+}
 
 .btn-success {
     background: transparent;

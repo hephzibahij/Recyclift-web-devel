@@ -1,9 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.getElementById('hamburger');
-    const mobileNav = document.getElementById('mobile-nav');
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const navLink = document.getElementById('nav-link');
 
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('is-active');
-        mobileNav.classList.toggle('is-active');
+    hamburgerMenu.addEventListener('click', () => {
+        navLink.classList.toggle('open');
+    });
+
+    const navItems = document.querySelectorAll('.nav-link a');
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            navLink.classList.remove('open');
+        });
     });
 });
